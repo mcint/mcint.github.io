@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="generator" content="Pelican" />
+        <title>just start</title>
+        <link rel="stylesheet" href="https://mcint.github.io/p/theme/css/main.css" />
+        <link href="https://mcint.github.io/p/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="just start Atom Feed" />
+</head>
+
+<body id="index" class="home">
+        <header id="banner" class="body">
+                <h1><a href="https://mcint.github.io/p/">just start</a></h1>
+                <nav><ul>
+                    <li><a href="https://mcint.github.io/p/category/thinking.html">Thinking</a></li>
+                </ul></nav>
+        </header><!-- /#banner -->
+
+            <aside id="featured" class="body">
+                <article>
+                    <h1 class="entry-title"><a href="https://mcint.github.io/p/on-tmux.html">Thinking on tmux configuration - composable vs redefined configs</a></h1>
+<footer class="post-info">
+        <abbr class="published" title="2022-09-08T15:58:31-07:00">
+                Published: Thu 08 September 2022
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="https://mcint.github.io/p/author/mcint.html">mcint</a>
+        </address>
+<p>In <a href="https://mcint.github.io/p/category/thinking.html">Thinking</a>.</p>
+<p>tags: <a href="https://mcint.github.io/p/tag/thinking.html">thinking</a> <a href="https://mcint.github.io/p/tag/dotfiles.html">dotfiles</a> <a href="https://mcint.github.io/p/tag/cli.html">cli</a> <a href="https://mcint.github.io/p/tag/tools.html">tools</a> <a href="https://mcint.github.io/p/tag/tmux.html">tmux</a> <a href="https://mcint.github.io/p/tag/config.html">config</a> </p>
+</footer><!-- /.post-info --><p>Tools you use every day extend your thinking.  If you build on well-factored
+tools, you gain great power.  If you build on convoluted tools, you may one day
+find yourself mired in a mess.</p>
+<p><code>tmux</code> provides a mostly clear set of interface elements and predictable
+interactions.  It's often worth configuring to get the best use of it.</p>
+<h2>opinionated .tmux</h2>
+<p><a href="https://github.com/gpakosz/.tmux" rel=nofollow>https://github.com/gpakosz/.tmux</a>
+(hereafter, dot-tmux) offers an opinionated
+setup, so opinionated in fact, that you have to learn it's own Domain-Specific
+Language (DSL) to manage its configuration of tmux.  As someone who continually
+refines my use of tools, I think this approach is wrong.</p>
+<p>Configuration, programming, can be done in a few ways.</p>
+<p>Composition or configuration.</p>
+<p>tmux offers an expressive configuration format, allowing functions and
+transformations</p>
+<p>Writing a language over the top of this which allows configuration through new
+specially named variables as well as through direct native setting leads to
+confusion.  It requires a much deeper understanding of the configuration system
+to predict the effect of simple changes.  Without learning a lot more, on par
+with some level of rewriting a custom config system, I find myself mired in a
+mess.</p>
+<p>The new configuration layer runs some of its changes initially, and some of its
+changes after reading in the end-user config file.</p>
+<p>I was tempted by the promise of easily available, powerful configuration
+options. However, opinionated choices and an obscurring, verbose DSL in the
+configuation layer make otherwise easy changes unpredictable.</p>
+<p>Framework vs library. </p>
+<h3>Exploring justifications</h3>
+<h4>Composition versus configuration.</h4>
+<p>Perhaps I experience that good configuration systems allow expression of a
+"composition" of "behaviors" (nouns) of the system.</p>
+<div class="highlight"><pre><span></span><code><span class="na">do       behavior-1</span><span class="w"></span>
+<span class="na">don&#39;t-do behavior-2</span><span class="w"></span>
+</code></pre></div>
+
+<ul>
+<li>"Convention over configuration"</li>
+<li>"Convention over code"</li>
+</ul>
+<h4>Framework vs library tmux configuration, raw <code>.tmux.conf</code>, has the flavor</h4>
+<p>of a library to me. Many options are directly available.</p>
+<p>dot-tmux has the flavor of a framework. It controls how to set most of tmux's
+configuration, and clashes with options you can still set directly.</p>
+<p>It seems possible to me that a hypothetical lib-conf-tmux could present an
+opinionated set of options, that could be called before manually setting your
+own overrides to the chosen opinioned defaults.</p>                </article>
+            </aside><!-- /#featured -->
+        <section id="extras" class="body">
+                <div class="blogroll">
+                        <h2>links</h2>
+                        <ul>
+                            <li><a href="https://ocf.io/mcint">ocf</a></li>
+                        </ul>
+                </div><!-- /.blogroll -->
+                <div class="social">
+                        <h2>social</h2>
+                        <ul>
+                            <li><a href="https://mcint.github.io/p/feeds/all.atom.xml" type="application/atom+xml" rel="alternate">atom feed</a></li>
+
+                            <li><a href="https://twitter.com/lorenpmc">lorenpmc</a></li>
+                            <li><a href="https://github.com/mcint/">mcint</a></li>
+                        </ul>
+                </div><!-- /.social -->
+        </section><!-- /#extras -->
+
+        <footer id="contentinfo" class="body">
+                <address id="about" class="vcard body">
+                Proudly powered by <a href="https://getpelican.com/">Pelican</a>, which takes great advantage of <a href="https://www.python.org/">Python</a>.
+                </address><!-- /#about -->
+
+                <p>The theme is by <a href="https://www.smashingmagazine.com/2009/08/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
+        </footer><!-- /#contentinfo -->
+
+</body>
+</html>
