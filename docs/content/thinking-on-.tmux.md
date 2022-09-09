@@ -1,6 +1,10 @@
 Title: Thinking on tmux configuration - composable vs redefined configs
 Date: 2022-09-08 15:58:31
-Category: thinking dotfiles cli tools tmux config
+Category: Thinking
+Tags: thinking, dotfiles, cli, tools, tmux, config
+Slug: on-tmux
+Authors: mcint
+Summary: Thinking on tmux configuration - composable vs redefined configs
 
 Tools you use every day extend your thinking.  If you build on well-factored
 tools, you gain great power.  If you build on convoluted tools, you may one day
@@ -11,7 +15,8 @@ interactions.  It's often worth configuring to get the best use of it.
 
 ## opinionated .tmux
 
-https://github.com/gpakosz/.tmux (hereafter, dot-tmux) offers an opinionated
+<a href="https://github.com/gpakosz/.tmux" rel=nofollow>https://github.com/gpakosz/.tmux</a>
+(hereafter, dot-tmux) offers an opinionated
 setup, so opinionated in fact, that you have to learn it's own Domain-Specific
 Language (DSL) to manage its configuration of tmux.  As someone who continually
 refines my use of tools, I think this approach is wrong.
@@ -47,11 +52,10 @@ Framework vs library.
 Perhaps I experience that good configuration systems allow expression of a
 "composition" of "behaviors" (nouns) of the system.
 
-```
-do behavior-1
+```ini
+do       behavior-1
 don't-do behavior-2
 ```
-
 
 - "Convention over configuration"
 - "Convention over code"

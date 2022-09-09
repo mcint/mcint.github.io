@@ -5,37 +5,39 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="generator" content="Pelican" />
         <title>just start</title>
-        <link rel="stylesheet" href="/theme/css/main.css" />
+        <link rel="stylesheet" href="https://mcint.github.io/p/theme/css/main.css" />
+        <link href="https://mcint.github.io/p/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="just start Atom Feed" />
 </head>
 
 <body id="index" class="home">
         <header id="banner" class="body">
-                <h1><a href="/">just start</a></h1>
+                <h1><a href="https://mcint.github.io/p/">just start</a></h1>
                 <nav><ul>
-                    <li><a href="/category/thinking-dotfiles-cli-tools-tmux-config.html">thinking dotfiles cli tools tmux config</a></li>
+                    <li><a href="https://mcint.github.io/p/category/thinking.html">Thinking</a></li>
                 </ul></nav>
         </header><!-- /#banner -->
 
             <aside id="featured" class="body">
                 <article>
-                    <h1 class="entry-title"><a href="/thinking-on-tmux-configuration-composable-vs-redefined-configs.html">Thinking on tmux configuration - composable vs redefined configs</a></h1>
+                    <h1 class="entry-title"><a href="https://mcint.github.io/p/on-tmux.html">Thinking on tmux configuration - composable vs redefined configs</a></h1>
 <footer class="post-info">
         <abbr class="published" title="2022-09-08T15:58:31-07:00">
                 Published: Thu 08 September 2022
         </abbr>
 
         <address class="vcard author">
-                By                         <a class="url fn" href="/author/mcint.html">mcint</a>
+                By                         <a class="url fn" href="https://mcint.github.io/p/author/mcint.html">mcint</a>
         </address>
-<p>In <a href="/category/thinking-dotfiles-cli-tools-tmux-config.html">thinking dotfiles cli tools tmux config</a>.</p>
-
+<p>In <a href="https://mcint.github.io/p/category/thinking.html">Thinking</a>.</p>
+<p>tags: <a href="https://mcint.github.io/p/tag/thinking.html">thinking</a> <a href="https://mcint.github.io/p/tag/dotfiles.html">dotfiles</a> <a href="https://mcint.github.io/p/tag/cli.html">cli</a> <a href="https://mcint.github.io/p/tag/tools.html">tools</a> <a href="https://mcint.github.io/p/tag/tmux.html">tmux</a> <a href="https://mcint.github.io/p/tag/config.html">config</a> </p>
 </footer><!-- /.post-info --><p>Tools you use every day extend your thinking.  If you build on well-factored
 tools, you gain great power.  If you build on convoluted tools, you may one day
 find yourself mired in a mess.</p>
 <p><code>tmux</code> provides a mostly clear set of interface elements and predictable
 interactions.  It's often worth configuring to get the best use of it.</p>
 <h2>opinionated .tmux</h2>
-<p>https://github.com/gpakosz/.tmux (hereafter, dot-tmux) offers an opinionated
+<p><a href="https://github.com/gpakosz/.tmux" rel=nofollow>https://github.com/gpakosz/.tmux</a>
+(hereafter, dot-tmux) offers an opinionated
 setup, so opinionated in fact, that you have to learn it's own Domain-Specific
 Language (DSL) to manage its configuration of tmux.  As someone who continually
 refines my use of tools, I think this approach is wrong.</p>
@@ -59,8 +61,8 @@ configuation layer make otherwise easy changes unpredictable.</p>
 <h4>Composition versus configuration.</h4>
 <p>Perhaps I experience that good configuration systems allow expression of a
 "composition" of "behaviors" (nouns) of the system.</p>
-<div class="highlight"><pre><span></span><code><span class="k">do</span><span class="w"> </span><span class="nv">behavior</span><span class="o">-</span><span class="mi">1</span><span class="w"></span>
-<span class="nv">don</span><span class="err">&#39;t-do behavior-2</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="na">do       behavior-1</span><span class="w"></span>
+<span class="na">don&#39;t-do behavior-2</span><span class="w"></span>
 </code></pre></div>
 
 <ul>
@@ -79,18 +81,16 @@ own overrides to the chosen opinioned defaults.</p>                </article>
                 <div class="blogroll">
                         <h2>links</h2>
                         <ul>
-                            <li><a href="https://getpelican.com/">Pelican</a></li>
-                            <li><a href="https://www.python.org/">Python.org</a></li>
-                            <li><a href="https://palletsprojects.com/p/jinja/">Jinja2</a></li>
-                            <li><a href="#">You can modify those links in your config file</a></li>
+                            <li><a href="https://ocf.io/mcint">ocf</a></li>
                         </ul>
                 </div><!-- /.blogroll -->
                 <div class="social">
                         <h2>social</h2>
                         <ul>
+                            <li><a href="https://mcint.github.io/p/feeds/all.atom.xml" type="application/atom+xml" rel="alternate">atom feed</a></li>
 
-                            <li><a href="#">You can add links in your config file</a></li>
-                            <li><a href="#">Another social link</a></li>
+                            <li><a href="https://twitter.com/lorenpmc">lorenpmc</a></li>
+                            <li><a href="https://github.com/mcint/">mcint</a></li>
                         </ul>
                 </div><!-- /.social -->
         </section><!-- /#extras -->
