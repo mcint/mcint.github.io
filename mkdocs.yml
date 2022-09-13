@@ -1,3 +1,5 @@
 site_name: Mcint's Docs
 docs_dir: src
 site_dir: docs
+
+hidden: 'me/howto.md'
