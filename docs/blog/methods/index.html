@@ -8,7 +8,7 @@
         
         
         <link rel="shortcut icon" href="../../img/favicon.ico">
-        <title>Welcome to MkDocs - Mcint's Docs</title>
+        <title>Methods - Mcint's Docs</title>
         <link href="../../css/bootstrap.min.css" rel="stylesheet">
         <link href="../../css/font-awesome.min.css" rel="stylesheet">
         <link href="../../css/base.css" rel="stylesheet">
@@ -36,29 +36,29 @@
                             <li class="navitem">
                                 <a href="../.." class="nav-link">Init</a>
                             </li>
-                            <li class="dropdown">
+                            <li class="dropdown active">
                                 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Blog <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     
 <li>
-    <a href="../../blog/" class="dropdown-item">Blog</a>
+    <a href="../" class="dropdown-item">Blog</a>
 </li>
                                     
 <li>
-    <a href="../../blog/methods/" class="dropdown-item">Methods</a>
+    <a href="./" class="dropdown-item active">Methods</a>
 </li>
                                     
 <li>
-    <a href="../../blog/topics/" class="dropdown-item">Topics</a>
+    <a href="../topics/" class="dropdown-item">Topics</a>
 </li>
                                 </ul>
                             </li>
-                            <li class="dropdown active">
+                            <li class="dropdown">
                                 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Me <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     
 <li>
-    <a href="./" class="dropdown-item active">Welcome to MkDocs</a>
+    <a href="../../me/howto/" class="dropdown-item">Welcome to MkDocs</a>
 </li>
                                 </ul>
                             </li>
@@ -71,12 +71,12 @@
                             </a>
                         </li>
                             <li class="nav-item">
-                                <a rel="prev" href="../../blog/topics/" class="nav-link">
+                                <a rel="prev" href="../" class="nav-link">
                                     <i class="fa fa-arrow-left"></i> Previous
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a rel="next" class="nav-link disabled">
+                                <a rel="next" href="../topics/" class="nav-link">
                                     Next <i class="fa fa-arrow-right"></i>
                                 </a>
                             </li>
@@ -98,13 +98,32 @@
     <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
         <ul class="nav flex-column">
             
-            <li class="nav-item" data-level="1"><a href="#welcome-to-mkdocs" class="nav-link">Welcome to MkDocs</a>
-              <ul class="nav flex-column">
-            <li class="nav-item" data-level="2"><a href="#commands" class="nav-link">Commands</a>
+            <li class="nav-item" data-level="1"><a href="#methods" class="nav-link">Methods</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-level="2"><a href="#project-layout" class="nav-link">Project layout</a>
+            
+            <li class="nav-item" data-level="1"><a href="#this-site" class="nav-link">This site</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#ideal-workflow" class="nav-link">Ideal workflow</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#building-it-further" class="nav-link">Building it further</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#frustrations-observations" class="nav-link">Frustrations, observations</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#site-generators" class="nav-link">Site generators</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#hosting-provider" class="nav-link">Hosting provider</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -115,21 +134,62 @@
 </div></div>
                     <div class="col-md-9" role="main">
 
-<h1 id="welcome-to-mkdocs">Welcome to MkDocs</h1>
-<p>For full documentation visit <a href="https://www.mkdocs.org">mkdocs.org</a>.</p>
-<h2 id="commands">Commands</h2>
+<h1 id="methods">Methods</h1>
+<p>I tried pelican on github pages. I have too much past frustration with jekyll
+to want to set up ruby and gems again locally just to publish a static site. I
+would rather first write my own bash and make site generator.</p>
+<h1 id="this-site">This site</h1>
+<p>I'm using MkDocs, locally running it with <code>poetry run</code> <code>mkdocs
+serve</code>.</p>
+<p>I edit (and preview) on personal computer with github keys, and push to github
+for publishing to Pages.</p>
+<h1 id="ideal-workflow">Ideal workflow</h1>
+<p>Easy writing and deployment. MkDocs's serve, with a jupyter notebook to writing
+updates. Maybe autocommitting, but publish as I write, and close access to
+powerful tools like the python ecosystem.</p>
+<h2 id="building-it-further">Building it further</h2>
+<p>I should make this a checklist, or a table for comparisons. A table would be
+nice, I can even list the strength of each framework in its own terms and
+consider the cartesian product of qualities I've loved with solutions on offer.</p>
+<h1 id="frustrations-observations">Frustrations, observations</h1>
+<p>Taking inspiration from NVC (Non-Violent Communication), I'm seeking 1)
+Observations, to uncover 2) Feelings, to assess 3) Needs, to arrive at 
+4) Requests for the tools and workflows I'll choose to use (OFNR).</p>
+<h2 id="site-generators">Site generators</h2>
 <ul>
-<li><code>mkdocs new [dir-name]</code> - Create a new project.</li>
-<li><code>mkdocs serve</code> - Start the live-reloading docs server.</li>
-<li><code>mkdocs build</code> - Build the documentation site.</li>
-<li><code>mkdocs -h</code> - Print help message and exit.</li>
+<li>jekyll<ul>
+<li>ruby, gem. installation, upgrades, slow painful compile to get the tool,
+  sudo for text processing.</li>
 </ul>
-<h2 id="project-layout">Project layout</h2>
-<pre><code>mkdocs.yml    # The configuration file.
-docs/
-    index.md  # The documentation homepage.
-    ...       # Other markdown pages, images and other files.
-</code></pre></div>
+</li>
+<li>mkdocs<ul>
+<li>TOC header levels. 1# expected as page title, and for upper out of
+  2-level header visibility. 3rd level hidden.</li>
+<li>4-indent for nested lists (not just 2, or 1). Possibly configurable,
+  check mkdocs.yml docs.</li>
+<li>nice if:<ul>
+<li>headers, in-page, had static fragment links. Only TOC renders them.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="hosting-provider">Hosting provider</h2>
+<ul>
+<li>Github Pages<ul>
+<li>+ good uptime</li>
+<li>- slow to deploy</li>
+<li>- requires trusted computer, github keys, git add-commit-push process.</li>
+</ul>
+</li>
+<li>Self-host <ul>
+<li>+ faster iteration. preview while editing. live site, or dev site</li>
+<li>- uptime, risk of downtime. site longevity. domain.</li>
+</ul>
+</li>
+</ul>
+<p>makes me want to build a site that can output to run on gh-pages, but that I
+edit primarily on personal site. under consideration.</p></div>
             </div>
         </div>
 
